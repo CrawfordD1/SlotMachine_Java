@@ -25,7 +25,8 @@ public class Runner {
     }
 
     public static void playGame(WheelSpinner wheel1, WheelSpinner wheel2, WheelSpinner wheel3, Player player, CombinationLogic combinationLogic, GameLogic game) {
-        System.out.println("--------------------------------");
+        game.resetWheels(wheel1, wheel2, wheel3);
+        System.out.println("-------------------------------");
         System.out.println();
         System.out.println("2 Spins Remaining");
         int bet = player.chooseAmount();
